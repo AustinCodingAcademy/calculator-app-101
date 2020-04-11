@@ -1,5 +1,44 @@
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  margin: 5% auto;
+  width: 525px;
+  height: 500px;
+  border: 5px solid black;
+}
+label {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 5%;
+}
+input {
+  margin: 5%;
+  width: 470px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+div {
+  margin-top: 20px;
+  margin-left: 12px;
+  font-size: 38px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+}
+.equals {
+  height: 60px;
+  width: 150px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 73px; 
 }
