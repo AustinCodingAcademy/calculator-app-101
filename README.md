@@ -3,8 +3,8 @@
 Inside this repo you'll find HTML, CSS, and JS files that come together to build a calculator. It's a simple & ugly calculator but it work as is to add and subtract two numbers. You have some tasks to do to get it into a prettier and more functional calculator.
 
 1. Fork and clone it to your local machine in whatever folder you've been working in so far, i.e. `devFolder`
-1. Open up the `index.html` file and uncomment line 7 so your JavaScript is connected to your HTML.
-1. Now read the comments on line 13, 18, and 26. Then look over the code to see if you understand what is being built.
+1. Open up the `index.html` file and uncomment line 7 so your JavaScript is connected to your HTML.-----
+1. Now read the comments on line 13, 18, and 26. Then look over the code to see if you understand what is being built.------
 1. Use live-server or something similar to serve it and see what's happening in the browser.
 1. Play. Type in two numbers then choose "add" or "subtract" and hit "equal" to see the results.
 1. Go back to the `index.html` file and look at line 14 and 16. Do you see the `onkeyup` Event Listeners? Follow the function they call into the `main.js` file and see if you can figure out what and how they're doing what they're doing.
