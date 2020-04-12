@@ -1,5 +1,19 @@
-body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+body{
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: small;
+}
+
+.calculator{
+  display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    background-color: aquamarine;
+    height: 500px;
+    align-items: center;
+    width: 500px
+    
+
 }
