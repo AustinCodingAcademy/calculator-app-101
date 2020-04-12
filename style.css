@@ -8,12 +8,14 @@ body{
 }
 
 .calculator{
-  display: grid;
+  margin-left: 50px;;
+   display: grid;
     grid-template-columns: 80px 80px 80px 80px;
     background-color: aquamarine;
     height: 500px;
     align-items: center;
     width: 500px
+    
     
 
 }
