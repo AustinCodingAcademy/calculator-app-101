@@ -7,12 +7,16 @@ let operation = null
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
 const saveFirstNumber = (num) => {
   firstNum = parseInt(num)  
+  removeclear()
+  document.getElementById("number1ent").innerHTML = " " + firstNum
 }
 
 // this function takes in the number you type in the 2nd input field and saves it to the "secondNum" variable
 const saveSecondNumber = (num) => {
   // "parseInt" is a built in function in JS that converts a string/word into a number
   secondNum = parseInt(num)
+  removeclear()
+  document.getElementById("number2ent").innerHTML = " " + secondNum
 }
 
 // this function takes in two argument/numbers and returns the sum of them
@@ -24,34 +28,59 @@ const add = (numA, numB) => {
 // this function takes in two argument/numbers and returns the difference of them
 const subtract = (numA, numB) => {
   const difference = numA - numB
+  console.log(difference)
   return difference
 }
 
 // These variables are already defined but that don't point to functions. It's up to you to build the functions to complete your calculator use:
 
 const multiply = (numA, numB) => {
+  const product = numA * numB
+  console.log (product)
+  return product
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  console.log(numA, numB)
+  
 }
 
-const divide = null
+const divide = (numA, numB) => {
+  const quotient = numA / numB
+  console.log (quotient)
+  return quotient
 // / to get a quotient,
+}
 
-const modulus = null
+const modulus = (numA, numB) => {
+  const remaind = numA % numB
+  console.log (remaind)
+  return remaind
+}
+function myFunction() {
+  document.getElementById("clearme").innerHTML = "Calculator Cleared" 
+  document.getElementById("result").innerHTML = "Results Will Display Here" 
+  firstNum = null
+  secondNum = null
+  operation = null
+  document.getElementById("number1ent").innerHTML = "None Entered "
+  document.getElementById("number2ent").innerHTML = "None Entered "
+  document.getElementById("selection").innerHTML = "?"
+}
+
 // and % to get a remainder.
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 const changeOperation = (chosenOperation) => {
   operation = chosenOperation
   // Use your Chrome Inspector Tool > Console Tab to see the "operation" that's logged
+  document.getElementById("selection").innerHTML = " " + operation
   console.log(operation)
 }
 
 // In order to show the user their results we have to access the DOM and stick in the value
 const putResultInElement = (operationResults) => {
   // access the DOM by writing "document" then use the method "getElementById" and pass it the id, "result".
-  document.getElementById("result").innerHTML = "Results: " + operationResults
+  document.getElementById("result").innerHTML = "Result = " + operationResults
+  document.getElementById("selection").innerHTML = " " + operation
 
   // Remember, each element has built in properties like "innerHTML" which we can change to anything we like. 
   // Here we give it a string: "Results: " and add the value of the operation to it.
@@ -64,13 +93,18 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum))
     break;
-    case "division": console.log(divide(firstNum, secondNum)) 
+    case "division":  putResultInElement(divide(firstNum, secondNum))
     break;
-    case "modulus": console.log(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
+    
   }
+}
+
+const removeclear = () => {
+  document.getElementById("clearme").innerHTML = "Press Clear to Reset Calculator" 
 }
 
