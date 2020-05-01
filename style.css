@@ -5,15 +5,18 @@ body {
 .container{
   display: grid;
   grid-template: 1fr 1fr /1fr;
-  width: 80%;
+  width: 50%;
   height: 800px;
   
 }
 .calculator{
   background: linear-gradient(to left , rgba(241, 141, 141, 0.667),rgba(248, 37, 37, 0.667));
-  border: 1px solid black;
+  box-shadow: 3px 3px black;
  text-align: center;
  
+}
+.one{
+  margin: 10px;
 }
 .one1{
   margin: 20px;
