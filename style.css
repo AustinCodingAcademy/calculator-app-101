@@ -2,4 +2,15 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
 }
+ 
+#first-number {
+  display: grid;
+  grid-row: 1 / 2;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
