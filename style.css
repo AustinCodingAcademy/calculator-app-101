@@ -1,5 +1,75 @@
+header {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  margin: 30px auto;
+  width: 375px;
+  height: 50%;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+button {
+  height: 70px;
+  width: 70px;
+  margin: 5px;
+  border-radius: 35px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+#addition {
+  background-color: red;
+}
+
+#subtraction {
+  background-color: orange
+}
+
+#multiplication {
+  background-color: yellow;
+}
+
+#division {
+  background-color: green
+}
+
+#modulus {
+  background-color: blue;
+}
+
+#answered {
+  background-color: indigo
+}
+
+#cleared {
+  background-color: violet;
+}
+
+#result {
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+  font-weight: bolder;
 }
