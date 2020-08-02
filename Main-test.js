@@ -1,9 +1,9 @@
-let current = "0"
+let current = null
 let memory = null
 let operation = null
 
 const AddDigit = (num) => {
-  if (current == 0) {
+  if (current == null) {
     current = num
   } else {
     current = current + num
@@ -13,6 +13,7 @@ const AddDigit = (num) => {
 
 const setOperation = (id) => {
   memory = current
+  current = null
   switch (id) {
     case "addition": operation = id
     document.getElementById("currentOperation").value = "+"
