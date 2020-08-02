@@ -31,15 +31,23 @@ const subtract = (numA, numB) => {
 
 const multiply = (numA, numB) => {
   // * to get a product then return it
+  const product = numA * numB
+  return product
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  console.log(numA, numB)
 }
 
-const divide = null
-// / to get a quotient,
 
-const modulus = null
-// and % to get a remainder.
+const divide = (numA, numB) => {
+  // / to get a quotient,
+  const quotient = numA / numB
+  return quotient
+}
+
+const modulus = (numA, numB) => {
+  // and % to get a remainder.
+  const remainder = numA % numB
+  return remainder
+}
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 const changeOperation = (chosenOperation) => {
@@ -61,16 +69,22 @@ const putResultInElement = (operationResults) => {
 const equals = () => {
   switch (operation) {
     case "addition":  putResultInElement(add(firstNum, secondNum)) 
+    console.log(add(firstNum, secondNum))
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
+    console.log(subtract(firstNum, secondNum))
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
+    console.log(multiply(firstNum, secondNum))
     break;
-    case "division": console.log(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
+    console.log(divide(firstNum, secondNum))
     break;
-    case "modulus": console.log(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
+    console.log(modulus(firstNum, secondNum))
     break;
-    default: "Choose an operation"
+    default: alert("Choose an operation")
+    console.log("No operation selected")
   }
 }
 

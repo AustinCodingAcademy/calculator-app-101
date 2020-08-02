@@ -2,4 +2,60 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  background-color: white;
+  border: 5px solid grey;
+}
+
+.first-Number {
+  grid-row: 1/6;
+  grid-column: 1/2;
+  margin: auto;
+  padding: 50px;
+}
+
+#first-Number {
+  width: 100px;
+  height: 100px;
+  border: 3px solid grey;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.second-Number {
+  grid-row: 1/6;
+  grid-column: 3/4;
+  margin: auto;
+  padding: 50px;
+}
+
+#second-Number {
+  width: 100px;
+  height: 100px;
+  border: 3px solid grey;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-row: 1/6;
+  grid-column: 2/3;
+
+}
+
+.executeButtons {
+  display: flex;
+  flex-direction: row;
+  grid-row: 6/7;
+  grid-column: 1/4;
+  justify-content: space-evenly;
 }
