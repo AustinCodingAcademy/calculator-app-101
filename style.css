@@ -1,5 +1,27 @@
 body {
   margin: 20% auto;
   width: 50%;
-  height: 75%;
+  height: 75%;;
+  background-color: rgba(147, 80, 160, 0.692);
+}
+form {
+ display: flex;
+ flex-direction: column;
+ background-color: rgb(214, 214, 213);
+ padding: 20pt;
+}
+#result {
+  display: flex;
+  justify-content: center;
+  padding: 50pt;
+  background-color: rgba(153, 248, 217, 0.5);
+  font-size: 3em;
+}
+main {
+  background-color: rgb(214, 214, 213);
+  padding: 25pt;
+}
+div {
+  margin: auto;
+  margin-top: 15pt;
 }
