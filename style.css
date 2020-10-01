@@ -2,4 +2,118 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  background-color: rgb(112, 108, 108);
+}
+
+.calculator {
+  background-image: linear-gradient(rgb(82, 82, 82), rgb(0, 0, 0));
+  padding: 1em;
+  display: grid;
+  border-radius: 20px;
+}
+
+.input {
+  margin: 2em;
+  border: none;
+  height: 6em;
+}
+
+#first-Number {
+  text-align: center;
+  color: #131219;
+  background-color: #ffffff;
+  font-size: 200%;
+  width: 99%;
+  height: 99%;
+  border: none;
+  outline: none;
+}
+
+
+
+#second-Number {
+  text-align: center;
+  color: #131219;
+  background-color: #ffffff;
+  font-size: 200%;
+  width: 99%;
+  height: 99%;
+  border: none;
+  outline: none;
+}
+
+.button {
+  border: none;
+  padding: 3em;
+  color: #333;
+  font-size: 30px;
+  
+}
+
+body {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  border-radius: 200px;
+}
+
+body label {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+div {
+  padding: 50px;
+  border-radius: 20px;
+  border-style: groove;
+  margin-top: 10px;
+}
+
+#result {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  font-size: 20px;
+  text-align: center;
+}
+
+#addition {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
+}
+
+#subtraction {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
+}
+
+#multiplication {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
+}
+
+#division {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
+}
+
+#modulus {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
+}
+
+.equals {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
+}
+
+#reset {
+  font-size: 30px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
+  border-radius: 10px;
 }
