@@ -1,5 +1,50 @@
-body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+
+body{
+      margin: auto;
+      padding: 100px;
+      height: auto;
+      font-size: 50px;
+      width: auto;
+      position: relative;
+      color: coral;
+      display: grid;
+      place-items: center;
+      
+      
 }
+input{
+      font-size: 50px;
+      padding: 5px;
+      margin-bottom: 25px;
+      
+
+}
+
+.center button{
+      color: deepskyblue;
+      font-size: 50px;
+      border-radius: 15%;
+      padding: 10px;
+
+}
+button {
+      font-size: 50px;
+      color: deepskyblue;
+      border-radius: 10%;
+}
+
+    
+    
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
