@@ -19,27 +19,38 @@ const saveSecondNumber = (num) => {
 const add = (numA, numB) => {
   const sum = numA + numB
   return sum
+  //console.log(numA, numB)
 }
 
 // this function takes in two argument/numbers and returns the difference of them
 const subtract = (numA, numB) => {
   const difference = numA - numB
   return difference
+ // console.log(numA, numB)
 }
 
 // These variables are already defined but that don't point to functions. It's up to you to build the functions to complete your calculator use:
 
 const multiply = (numA, numB) => {
   // * to get a product then return it
+  const product = numA * numB
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  console.log(numA, numB)
+  //console.log(numA, numB)
+  return product
 }
 
-const divide = null
+const divide = (numA, numB) => {
 // / to get a quotient,
+  const quotient = numA / numB
+  return quotient
+}
 
-const modulus = null
+const modulus = (numA, numB) => {
 // and % to get a remainder.
+const remainder = numA % numB
+//console.log(numA, numB)
+return remainder
+}
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 const changeOperation = (chosenOperation) => {
@@ -64,11 +75,11 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
     break;
-    case "division": console.log(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
     break;
-    case "modulus": console.log(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
