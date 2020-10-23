@@ -10,6 +10,7 @@ body {
   padding: 1em;
   display: grid;
   border-radius: 20px;
+  box-shadow: rgb(0, 0, 0) 0px 3px 45px 20px;
 }
 
 .input {
@@ -74,6 +75,7 @@ div {
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 151, 189));
   font-size: 20px;
   text-align: center;
+  box-shadow: rgb(0, 0, 0) 0px 3px 45px 20px;
 }
 
 #addition {

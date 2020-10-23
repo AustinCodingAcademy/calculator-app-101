@@ -45,9 +45,9 @@ const divide = (numA, numB) => {
 
 const modulus = (numA, numB) => {
   const remainder = numA % numB
+  return remainder 
   
 }
-// and % to get a remainder.
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 function changeOperation(chosenOperation) {
@@ -81,4 +81,5 @@ const equals = () => {
     default: "Choose an operation"
   }
 }
+
 
