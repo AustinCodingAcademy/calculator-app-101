@@ -1,5 +1,25 @@
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  margin: 2% auto;
+  width: 21%;
+  height: 80%;
+  border: 2px black solid; 
+}
+#result{
+  height: 2rem;
+  width: auto;
+  text-align: center;
+
+}
+
+.opButtons{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: block;
+}
+
+button{
+  width: 100%;
+  margin: 4pt 0 4pt 0;
 }
