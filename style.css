@@ -2,4 +2,10 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  background-color: aqua;
+}
+
+h1{
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000; 
 }
