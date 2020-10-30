@@ -1,5 +1,21 @@
 body {
-  margin: 20% auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: min-content;
+  border: solid;
+  padding: 10px;
+  margin: 20% center;
+  width:30%;
+  height: 100%;
+}
+
+.button {
+  background: grey;
+}
+
+#result {
+  background: transparent;
+  border: groove;
   width: 50%;
-  height: 75%;
+  height: 20px;
 }
