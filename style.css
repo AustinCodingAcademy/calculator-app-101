@@ -1,5 +1,21 @@
 body {
+  background-color: aqua;
   margin: 20% auto;
-  width: 50%;
+  width: 40%;
   height: 75%;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  text-align: center;
 }
