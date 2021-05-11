@@ -15,7 +15,7 @@ Inside this repo you'll find HTML, CSS, and JS files that come together to build
 1. After that, make sure each of your `button`s have the same `onclick` attribute as the `add` and `subtract` buttons. Just copy/paste into each. This will allow your operations to be used!
 1. Go back to the web page view of the Calculator and see how it's working. Try adding, subtracting, multiplying, dividing, and modulusing to see what's missing so you can fix it.
 
-> *HINT: the comments throughout the code are left for you to read and learn from.*
+ *HINT: the comments throughout the code are left for you to read and learn from.*
 
 ## What's Missing?
 
