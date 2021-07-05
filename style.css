@@ -1,5 +1,127 @@
-body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+
+
+.topsec {
+  grid-area: "marks";
+  text-align: center;
+  font-size: 30px;
+  padding:20px;
+  color: lightgreen;
+  display: block;
+  background-color:gray;
+  padding-left: 4px;
+  padding-right: 20px;
+  border-color:black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
 }
+
+button {
+  padding: 15px;
+}
+
+.calculator {
+  grid-area: calcu;
+
+}
+
+.scoreboard {
+  grid-area: showresults;
+  color: red;
+}
+.Step1 {
+  padding: 20px;
+  padding-top: 0px;
+}
+.Step2 {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+}
+.Step3 {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+  display: inline-block;
+}
+.Step4 {
+  padding-bottom: 20 px;
+  padding-top: 20px;
+}
+
+.Step1, .Step2, .Step3, .Step4, .scoreboard{
+  display: block;
+  background-color:gray;
+  color: white;
+  padding-left: 4px;
+  padding-right: 20px;
+  border-color:black;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
+}
+
+body {
+  margin: 10% auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-auto-columns: 70% 30%;
+  grid-template-areas: 
+  "marks showresults"
+  "calcu showresults"
+  
+
+  
+}
+
+.Step1 a {
+  text-align: center;
+}
+
+.scoreboard :nth-child(1){
+  padding-left: 20%;
+  font-size: 20px;
+  color: lightgreen;
+}
+#number1ent, #number2ent, #selection, #result{
+  background-color: honeydew;
+  padding: 10px;
+  color: red;
+  border-color: red;
+}
+
+@media (min-width: 655px) {
+  body {
+    margin: 10% auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-columns: 70% 30%;
+    grid-template-areas: 
+    "marks showresults"
+    "calcu showresults"
+    
+  
+    
+  }
+  
+}
+
+@media (max-width: 656px) {
+  body {
+    margin: 10% auto;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-template-areas: 
+    "marks"
+    "calcu"
+    "showresults"
+    
+  
+    
+  }
+      
+      
+      
+  }

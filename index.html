@@ -4,29 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <!-- <script src="main.js"></script> -->
+  <script src="main.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <form class="calculator">
+   <div class ="topsec">Mark's Calculator</div>
+
+  <form class="calculator" onreset= "myFunction()">
+    <div class="Step1">
+      <h7><br><a></h7> 
+      <a></a>STEP 1: Input two numbers that you want to use:<br><br></a>
+      
     <label for="first-number">First Number:</label>
     <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
     <input type="number" id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
-    <label for="second-number">Second Number:</label>
+    <h7><br></h7>
+    <label for="second-number"><br>Second Number:</label>
     <input type="number" id="second-Number" name="second-Number" placeholder="type the second number" onkeyup="saveSecondNumber(this.value)">
-    <div>
+    <h7><br> </h7>  
+  </div>
+    <div class="Step2">
+      <a>STEP 2: Select the type of mathmatical operation you want to perform:<br></a>
       <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
       <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">Add</button>
       <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">Subtract</button>
-      <button type="button" name="multiply" id="multiplication">Multiply</button>
-      <button type="button" name="divide" id="division">Divide</button>
-      <button type="button" name="modulus" id="modulus">Modulus</button>
+      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">Multiply</button>
+      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">Divide</button>
+      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">Modulus</button>
+      
     </div>
-    <br>
+   
+    <div class="Step3">
+      <a>STEP 3: Press Equals to get your result:<br></a>
     <!-- this "onclick" calls the "equal" function in the main.js file -->
     <button type="button" onclick="equals()">Equals</button>
+    
+    
+  </div>
+  <div class="Step4">
+    <a>STEP 4: Press Clear to start over:<br></a>
     <button type="reset">Clear</button>
+    <div id="clearme">Press Clear to Reset Calculator</div>
+  </div>
   </form>
-  <div id="result"></div>
+  <div class = "scoreboard">
+    <a>RESULTS SECTION</a>
+    <p>First Number Entered</p>
+    <div id = "number1ent">None Entered</div>
+    <p>Second Number Entered</p>
+    <div id = "number2ent">None Entered</div>
+    <p>Operation Chosen</p>
+    <div id="selection">?</div>
+    <p>Answer</p>
+    <div id="result">Results Show Here</div> 
+  </div>
 </body>
 </html>
