@@ -1,5 +1,21 @@
+.display {
+  display: grid;
+}
+
 body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  grid-template-columns: none;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
 }
+
+.label-one {
+  grid-row: 1/2;
+}
+
+.label-two {
+  grid-row: 2/3;
+}
+
+
