@@ -1,5 +1,53 @@
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form{
+  background-color: rgb(100, 237, 162);
+  padding: 5% 5% 5% 5%;
+  border-radius: 15%;
+  text-align: center;
+}
+
+input{
+  border-radius: 5%;
+  border: black;
+  font-size: 1em;
+  background-color: wheat;
+}
+
+div{
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+div button{
+  border-radius: 18%;
+  background-color: teal;
+  color: white;
+  border-color: teal;
+  font-size: 20px;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.result{
+  border-radius: 18%;
+  background-color: rgb(187, 8, 8);
+  color: white;
+  border-color:  rgb(187, 8, 8);
+  font-size: 20px;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+#result{
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 0;
+  font-size: 1.25em;
+  color: rgb(28, 5, 70);
 }
