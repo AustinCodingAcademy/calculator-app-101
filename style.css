@@ -1,5 +1,100 @@
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  margin: 10% auto;
+  width: 30%;
+  height: 100%; 
+}
+
+ form {
+  background-color: black;
+  border: 10px solid black;
+  border-radius: 12%;
+  height: 650px;
+  width: 350px;
+  text-align: center;
+}
+
+.screen {
+  height: 30vh;
+}
+
+.numbers {
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+button {
+  color: white;
+  font-size: 25px;
+  background-color: #333333;
+  border: 1px solid black;
+  border-radius: 90%;
+}
+
+input {
+  height: 25%;
+  color: white;
+  text-align: right;
+  font-size: 25px;
+  background-color: #21211f;
+  border: 1px solid black;
+  border-radius: 0%;
+}
+
+#addition, #subtraction, #multiplication, #division, #equal {
+  background-color: #FE9E0B;
+
+}
+
+#clear, #modulus, #plusminus {
+  background-color: #a5a5a5;
+}
+
+#result {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #21211f;
+  text-align: right;
+  font-size: 25px;
+  width: 90%;
+} 
+
+#clear {
+  grid-row: 1 / 1;
+}
+#plusminus {
+  grid-row: 1 /2 ;
+  grid-column: 2;
+}
+#modulus {
+  grid-row: 1;
+  grid-column: 3;
+}
+#division {
+  grid-row: 1;
+  grid-column: 4;
+}
+#multiplication {
+  grid-row: 2;
+  grid-column: 4;
+
+}
+#subtraction {
+  grid-row: 3;
+  grid-column: 4;
+}
+#addition {
+  grid-row: 4;
+  grid-column: 4;
+}
+#equal {
+  grid-row: 5;
+  grid-column: 4;
+}
+#zero {
+  border-radius: 45%;
+  grid-row: 5;
+  grid-column: 1/3;
 }
