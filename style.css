@@ -1,16 +1,20 @@
 body {
   margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: rgb(112, 108, 108);
 }
 
 .calculator {
-  background-image: linear-gradient(rgb(82, 82, 82), rgb(0, 0, 0));
-  padding: 1em;
-  display: grid;
-  border-radius: 20px;
-  box-shadow: rgb(0, 0, 0) 0px 3px 45px 20px;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(112, 108, 108)
 }
 
 .input {

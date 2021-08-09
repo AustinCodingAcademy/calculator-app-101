@@ -30,27 +30,19 @@ const subtract = (numA, numB) => {
 // These variables are already defined but that don't point to functions. It's up to you to build the functions to complete your calculator use:
 
 const multiply = (numA, numB) => {
-  const product = numA * numB
-  return product
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
   console.log(numA, numB)
 }
 
-const divide = (numA, numB) => {
- const quotient = numA / numB
- return quotient
-}
+const divide = null
 // / to get a quotient,
 
-const modulus = (numA, numB) => {
-  const remainder = numA % numB
-  return remainder 
-  
-}
+const modulus = null
+// and % to get a remainder.
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
-function changeOperation(chosenOperation) {
+const changeOperation = (chosenOperation) => {
   operation = chosenOperation
   // Use your Chrome Inspector Tool > Console Tab to see the "operation" that's logged
   console.log(operation)
@@ -66,20 +58,24 @@ const putResultInElement = (operationResults) => {
 }
 
 // The function uses the value of "operation" variable to determine which operation function it should use on the number: add, subtract, multiply, divide, or modulus
+
+
 const equals = () => {
+
+  console.log('firstNum:', firstNum)
+  console.log('secondNum:', secondNum)
   switch (operation) {
     case "addition":  putResultInElement(add(firstNum, secondNum)) 
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum))
     break;
-    case "division": putResultInElement(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum))
     break;
     case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
 }
-
 
