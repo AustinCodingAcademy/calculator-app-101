@@ -3,3 +3,6 @@ body {
   width: 50%;
   height: 75%;
 }
+*[id="addition"]{
+  color: rgb(173, 17, 17);
+}
