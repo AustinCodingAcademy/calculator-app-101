@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form class="calculator">
+        <table>
+            <input type="text" readonly id="input" name="input" class="input">
+            <thead>
+                    <th colspan="2"><input class="olarge" type="button" name="clear" value="C" onclick="clearfunc()"></th>
+                    <th><input class="operator" type="button" name="modulus" value="%" onclick="changeOperation(this)"></th>
+                    <th><input class="operator" type="button" name="division" value="/" onclick="changeOperation(this)"></th>
+            </thead>
+            <tbody>
+                <br>
+                <br>
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" value="8" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" value="9" onclick="insert(this)"></td>
+                    <td><input class="operator" type="button" name="multiplication" value="x"
+                            onclick="changeOperation(this)"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" value="5" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" value="6" onclick="insert(this)"></td>
+                    <td><input class="operator" type="button" name="subtraction" value="-"
+                            onclick="changeOperation(this)"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" value="2" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" value="3" onclick="insert(this)"></td>
+                    <td><input class="operator" type="button" name="addition" value="+" onclick="changeOperation(this)">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                    <td colspan="2"><input class="large" type="button" value="0" onclick="insert(this)"></td>
+                    <td><input class="button" type="button" name="decimal" value="." onclick="insert(this)"></td>
+                    <td><input class="operator" type="button" name="equals" value="=" onclick="equalsFunc(this)"></td>
+            </tfoot>
+        </table>
+    </form>
+    <script src="scripts1.js"></script>
+</body>
+
+</html>
