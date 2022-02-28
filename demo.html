@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="demo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form class="calculator" action="">
+      <div>
+        <label for="first-number">First Number</label>
+        <input type="number" name="first-number" id="first-number" placeholder="enter the first number" value="" onkeyup="saveTheFirstNumber(this.value)">
+        <label for="second-number">Second Number</label>
+        <input type="number" name="second-number" id="second-number" placeholder="enter the second number" value="" onkeyup="saveTheSecondNumber(this.value)">
+      </div> 
+      <div>
+          <button type="button" name="add" id="add" onclick="changeOp(this.id)">Add</button>
+          <button type="button" name="subtract" id="subtract" onclick="changeOp(this.id)">Subtract</button>
+          <button type="button" name="multiply" id="multiply" onclick="changeOp(this.id)">Multiply</button>
+          <button type="button" name="divide" id="divide" onclick="changeOp(this.id)">Divide</button>
+          <button type="button" name="modulus" id="modulus" onclick="changeOp(this.id)">Modulus</button>
+      </div>
+      <div>
+          <button type="button" onclick="result()">Equals</button>
+          <button type="reset">Reset</button>
+      </div>
+      <div id="results"></div>
+    </form>
+    
+</body>
+</html>
