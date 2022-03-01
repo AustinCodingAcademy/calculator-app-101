@@ -52,15 +52,25 @@ const modulus = (numA, numB) => {
     const modulus = numA / numB
     return modulus
 }
-  
+
 const changeOperation = (element) => {
-    console.log(element)
+    if(firstNum) equalsFunc()
+    let value = display.value
+    firstNum = parseInt(value)
+    display.value=null
     operation = element.name
-    if(firstNum == null) {
-        saveFirstNumber(display.value)
-        return display.value = null
-    }
-}
+    console.log(operation)
+  }
+  
+// const changeOperation = (element) => {
+//     if(firstNum) equalsFunc()
+//     operation = element.name
+//     console.log(element)
+//     if(firstNum == null) {
+//         saveFirstNumber(display.value)
+//         return display.value = null
+//     }
+// }
 
 const putResultInDisplay = (operationResults) => {
     display.value = operationResults
