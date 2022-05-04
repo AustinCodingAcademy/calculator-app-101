@@ -5,7 +5,7 @@ body {
   font-weight: bolder;
 }
 form {
-  border: 2px solid red;
+  border: 2px solid rgb(138, 9, 9);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr 1fr;
@@ -34,4 +34,12 @@ label {
   text-align: right;
   transform: translateY(25%);
   
+}
+
+button {
+  background-color: #777777;
+  color: rgb(138, 9, 9);
+}
+input {
+  border: none;
 }

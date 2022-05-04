@@ -9,10 +9,10 @@
 </head>
 <body>
   <form class="calculator">
-    <label for="first-number">First Number:</label>
+    <label id="leftlabel" for="first-number">First Number:</label>
     <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
     <input type="number" id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
-    <label for="second-number">Second Number:</label>
+    <label id="rightlabel" for="second-number">Second Number:</label>
     <input type="number" id="second-Number" name="second-Number" placeholder="type the second number" onkeyup="saveSecondNumber(this.value)">
     <div class="allTheButtons">
       <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
