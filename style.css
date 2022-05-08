@@ -2,4 +2,44 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  font-weight: bolder;
+}
+form {
+  border: 2px solid rgb(138, 9, 9);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+.allTheButtons{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  justify-content: space-between;
+  background-color: #444444;
+  
+}
+button:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+button:nth-of-type(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+#result {
+  text-align: center;
+  font-size: 16pt;
+}
+label {
+  text-align: right;
+  transform: translateY(25%);
+  
+}
+
+button {
+  background-color: #777777;
+  color: rgb(138, 9, 9);
+}
+input {
+  border: none;
 }
