@@ -130,30 +130,6 @@ form {
   width: 30px;
 }
 
-#subtraction {
-  background-color: var(--maize-crayola);
-  color: var(--persian-green);
-  font-size: 24px;
-  border-radius: 5px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#subtraction:hover {
-  cursor: pointer;
-  height: 35px;
-  width: 35px;
-}
-
-#subtraction:active {
-  height: 30px;
-  width: 30px;
-}
-
 #operations {
   grid-row: 2;
   grid-column: 2;
@@ -185,6 +161,30 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#subtraction {
+  background-color: var(--maize-crayola);
+  color: var(--persian-green);
+  font-size: 24px;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#subtraction:hover {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
+#subtraction:active {
+  height: 30px;
+  width: 30px;
 }
 
 .clear {
@@ -225,10 +225,6 @@ form {
   text-align: center;
 }
 
-.hide {
-  display: none;
-}
-
 .second-number-label {
   grid-row: 3;
   justify-self: center;
@@ -249,10 +245,6 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
-  #result {
-    font-size: 38px;
-  }
-
   #addition {
     font-size: 34px;
     height: 40px;
@@ -322,6 +314,10 @@ form {
     width: 40px;
   }
 
+  #result {
+    font-size: 38px;
+  }
+
   #subtraction {
     font-size: 34px;
     height: 40px;
@@ -343,7 +339,14 @@ form {
     font-size: 38px;
   }
 
+  .first-number-input {
+    font-size: 28px;
+  }
   .second-number-label {
     font-size: 38px;
+  }
+
+  .second-number-input {
+    font-size: 28px;
   }
 } ;
