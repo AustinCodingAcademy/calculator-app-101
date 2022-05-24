@@ -55,13 +55,10 @@ h1 {
 
 #addition:hover {
   cursor: pointer;
-  height: 35px;
-  width: 35px;
 }
 
 #addition:active {
-  height: 30px;
-  width: 30px;
+  background-color: whitesmoke;
 }
 
 #division {
@@ -79,13 +76,10 @@ h1 {
 
 #division:hover {
   cursor: pointer;
-  height: 35px;
-  width: 35px;
 }
 
 #division:active {
-  height: 30px;
-  width: 30px;
+  background-color: whitesmoke;
 }
 
 #modulus {
@@ -103,13 +97,10 @@ h1 {
 
 #modulus:hover {
   cursor: pointer;
-  height: 35px;
-  width: 35px;
 }
 
 #modulus:active {
-  height: 30px;
-  width: 30px;
+  background-color: whitesmoke;
 }
 
 #multiplication {
@@ -127,13 +118,10 @@ h1 {
 
 #multiplication:hover {
   cursor: pointer;
-  height: 35px;
-  width: 35px;
 }
 
 #multiplication:active {
-  height: 30px;
-  width: 30px;
+  background-color: whitesmoke;
 }
 
 #operations {
@@ -184,13 +172,10 @@ h1 {
 
 #subtraction:hover {
   cursor: pointer;
-  height: 35px;
-  width: 35px;
 }
 
 #subtraction:active {
-  height: 30px;
-  width: 30px;
+  background-color: whitesmoke;
 }
 
 :focus {
