@@ -6,25 +6,25 @@ let operation = null;
 
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
 const saveFirstNumber = (num) => {
-  firstNum = parseInt(num);
+  firstNum = parseFloat(num);
 };
 
 // this function takes in the number you type in the 2nd input field and saves it to the "secondNum" variable
 const saveSecondNumber = (num) => {
   // "parseInt" is a built in function in JS that converts a string/word into a number
-  secondNum = parseInt(num);
+  secondNum = parseFloat(num);
 };
 
 // this function takes in two argument/numbers and returns the sum of them
 const add = (numA, numB) => {
   const sum = numA + numB;
-  return sum;
+  return Math.round(sum * 1000000) / 1000000;
 };
 
 // this function takes in two argument/numbers and returns the difference of them
 const subtract = (numA, numB) => {
   const difference = numA - numB;
-  return difference;
+  return Math.round(difference * 1000000) / 1000000;
 };
 
 // These variables are already defined but that don't point to functions. It's up to you to build the functions to complete your calculator use:
@@ -33,17 +33,17 @@ const multiply = (numA, numB) => {
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
   const product = numA * numB;
-  return product;
+  return Math.round(product * 1000000) / 1000000;
 };
 
 const divide = (numA, numB) => {
   const quotient = numA / numB;
-  return quotient;
+  return Math.round(quotient * 1000000) / 1000000;
 };
 
 const modulus = (numA, numB) => {
   const modulus = numA % numB;
-  return modulus;
+  return Math.round(modulus * 1000000) / 1000000;
 };
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
