@@ -14,29 +14,33 @@
 
 body {
   margin: 10% auto;
-  width: 50%;
+  width: 100%;
   height: 75%;
   font-family: 'Grape Nuts';
+  background-color: rgba(38, 70, 83, 0.138);
 }
 
 form {
   height: auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 3fr 2fr 3fr 2fr 2fr;
   gap: 10%;
   background-color: var(--charcoal);
-  padding: 2%;
+  padding: 20px;
   border-radius: 10px;
 }
 
 #addition {
   background-color: var(--maize-crayola);
   color: var(--persian-green);
-  font-size: 34px;
+  font-size: 24px;
   border-radius: 5px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,22 +49,22 @@ form {
 
 #addition:hover {
   cursor: pointer;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 
 #addition:active {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 #division {
   background-color: var(--maize-crayola);
   color: var(--persian-green);
-  font-size: 34px;
+  font-size: 24px;
   border-radius: 5px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,22 +73,22 @@ form {
 
 #division:hover {
   cursor: pointer;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 
 #division:active {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 #modulus {
   background-color: var(--maize-crayola);
   color: var(--persian-green);
-  font-size: 34px;
+  font-size: 24px;
   border-radius: 5px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,22 +97,22 @@ form {
 
 #modulus:hover {
   cursor: pointer;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 
 #modulus:active {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 #multiplication {
   background-color: var(--maize-crayola);
   color: var(--persian-green);
-  font-size: 34px;
+  font-size: 24px;
   border-radius: 5px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,22 +121,22 @@ form {
 
 #multiplication:hover {
   cursor: pointer;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 
 #multiplication:active {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 #subtraction {
   background-color: var(--maize-crayola);
   color: var(--persian-green);
-  font-size: 34px;
+  font-size: 24px;
   border-radius: 5px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,13 +145,13 @@ form {
 
 #subtraction:hover {
   cursor: pointer;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
 
 #subtraction:active {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 #operations {
@@ -157,6 +161,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 5%;
 }
 
@@ -169,8 +174,11 @@ form {
 
 #result {
   height: 30%;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
   background-color: var(--charcoal);
-  font-size: 54px;
+  font-size: 24px;
   color: var(--maize-crayola);
   border-radius: 10px;
   display: flex;
@@ -185,27 +193,36 @@ form {
   color: whitesmoke;
   font-size: 24px;
   border-radius: 10px;
+  justify-self: center;
+  width: 80%;
 }
 .equals {
   grid-column: span 2;
-  background-color: var(--burnt-sienna);
+  background-color: var(--persian-green);
   color: whitesmoke;
   font-size: 24px;
+  border-radius: 10px;
+  justify-self: center;
+  width: 80%;
 }
 .first-number-label {
   grid-row: 1;
   justify-self: center;
   align-self: center;
-  font-size: 34px;
+  font-size: 30px;
   color: var(--maize-crayola);
+  text-align: center;
 }
 
 .first-number-input {
-  /* grid-column: 7/13; */
   font-family: 'Grape Nuts';
-  font-size: 28px;
+  font-size: 14px;
   padding-left: 0.5em;
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
 }
 
 .hide {
@@ -216,15 +233,117 @@ form {
   grid-row: 3;
   justify-self: center;
   align-self: center;
-
-  font-size: 34px;
+  font-size: 30px;
   color: var(--maize-crayola);
+  text-align: center;
 }
 
 .second-number-input {
   grid-row: 3;
   font-family: 'Grape Nuts';
-  font-size: 28px;
+  font-size: 14px;
   padding-left: 0.5em;
   border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  #result {
+    font-size: 38px;
+  }
+
+  #addition {
+    font-size: 34px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+  }
+
+  #addition:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+  }
+
+  #addition:active {
+    height: 40px;
+    width: 40px;
+  }
+
+  #division {
+    font-size: 34px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #division:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+  }
+
+  #division:active {
+    height: 40px;
+    width: 40px;
+  }
+
+  #modulus {
+    font-size: 34px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #modulus:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+  }
+
+  #modulus:active {
+    height: 40px;
+    width: 40px;
+  }
+
+  #multiplication {
+    font-size: 34px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #multiplication:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+  }
+
+  #multiplication:active {
+    height: 40px;
+    width: 40px;
+  }
+
+  #subtraction {
+    font-size: 34px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #subtraction:hover {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+  }
+
+  #subtraction:active {
+    height: 40px;
+    width: 40px;
+  }
+
+  .first-number-label {
+    font-size: 38px;
+  }
+
+  .second-number-label {
+    font-size: 38px;
+  }
+} ;
