@@ -193,6 +193,12 @@ h1 {
   width: 30px;
 }
 
+:focus {
+  border: 3px solid var(--burnt-sienna);
+}
+.active {
+  border: solid 3px var(--burnt-sienna);
+}
 .clear {
   grid-column: span 2;
   background-color: var(--burnt-sienna);

@@ -62,7 +62,7 @@ const changeOperation = (chosenOperation) => {
   // } else if (operation === modulus) {
   //   operation = '%';
   // }
-  console.log(operation);
+  // console.log(operation);
 };
 
 // In order to show the user their results we have to access the DOM and stick in the value
