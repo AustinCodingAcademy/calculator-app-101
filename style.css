@@ -1,5 +1,116 @@
-body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  background-color: rgb(192, 142, 142);
+  border: 5px solid black;
+}
+
+.page_container {
+  border: 5px solid pink;
+  width: 95vw;
+  min-height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  /* align-items: center; */
+  justify-items: center;
+
+  margin: 0 auto;
+}
+.calculator {
+  /* display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr); */
+  border: 5px solid green;
+
+  background-color: aquamarine;
+}
+/* display: grid; 
+  width: 90vw;
+
+  grid-template-columns: repeat(6, 1fr); */
+
+/* grid-template-areas:
+    ". . . . . . . ."
+    ". first first . num1 num1 num1 ."
+    ". . . . . . . ."
+    ". . + - x / % ."
+    ". . . . . . . ."
+    ". second second . num2 num2 num2 ."
+    ". . . . . . . ."
+    ". . equals equals . results results results"
+    ". . . . . . . ."
+    ". . . reset reset reset . .";
+} */
+h1 {
+  font-size: 46px;
+}
+label {
+  font-size: 30px;
+}
+input {
+  height: 12%;
+}
+button {
+  height: 12%;
+  width: 15%;
+  font-size: 20px;
+}
+#reset {
+  height: 12%;
+  width: 28%;
+  font-size: 20px;
+}
+#result {
+  display: inline-block;
+  border: solid 5px black;
+  height: 12%;
+  width: 50%;
+}
+
+/* #first-number-label {
+  grid-area: first;
+}
+#first-Number {
+  grid-area: num1;
+}
+#second-number-label {
+  grid-area: second;
+}
+#second-Number {
+  grid-area: num2;
+}
+#addition {
+  grid-area: add;
+}
+#subtraction {
+  grid-area: sub;
+}
+#multiplication {
+  grid-area: mult;
+}
+#division {
+  grid-area: div;
+}
+#modulus {
+  grid-area: mod;
+}
+#equals {
+  grid-area: equals;
+}
+#result {
+  grid-area: results;
+}
+#reset {
+  grid-area: reset;
+} */

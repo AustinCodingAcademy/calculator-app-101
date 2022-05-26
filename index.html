@@ -3,31 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=M+PLUS+Rounded+1c:wght@400;700&family=Nanum+Gothic&family=Radio+Canada:wght@300;400&family=Titillium+Web:wght@200;300;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <form class="calculator">
-      <label for="first-number">First Number:</label>
-      <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
-      <input
-        type="number"
-        id="first-Number"
-        name="first-Number"
-        placeholder="type the first number"
-        value=""
-        onkeyup="saveFirstNumber(this.value)"
-      /><br />
-      <label for="second-number">Second Number:</label>
-      <input
-        type="number"
-        id="second-Number"
-        name="second-Number"
-        placeholder="type the second number"
-        onkeyup="saveSecondNumber(this.value)"
-      />
-      <div>
+    <div class="page_container">
+      <h1>Calc It UP!</h1>
+      <form class="calculator">
+        <label id="first-number-label" for="first-number">First #:</label>
+        <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
+        <input
+          type="number"
+          id="first-Number"
+          name="first-Number"
+          placeholder="Enter 1st #"
+          value=""
+          onkeyup="saveFirstNumber(this.value)"
+        /><br />
+
         <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
         <button
           type="button"
@@ -35,7 +35,7 @@
           id="addition"
           onclick="changeOperation(this.id)"
         >
-          Add
+          +
         </button>
         <button
           type="button"
@@ -43,7 +43,7 @@
           id="subtraction"
           onclick="changeOperation(this.id)"
         >
-          Subtract
+          -
         </button>
         <button
           type="button"
@@ -51,7 +51,7 @@
           id="multiplication"
           onclick="changeOperation(this.id)"
         >
-          Multiply
+          x
         </button>
         <button
           type="button"
@@ -59,7 +59,7 @@
           id="division"
           onclick="changeOperation(this.id)"
         >
-          Divide
+          /
         </button>
         <button
           type="button"
@@ -67,14 +67,22 @@
           id="modulus"
           onclick="changeOperation(this.id)"
         >
-          Modulus
-        </button>
-      </div>
-      <br />
-      <!-- this "onclick" calls the "equal" function in the main.js file -->
-      <button type="button" onclick="equals()">Equals</button>
-      <button type="reset">Clear</button>
-    </form>
-    <div id="result"></div>
+          %</button
+        ><br />
+        <label id="second-number-label" for="second-number">Second #:</label>
+        <input
+          type="number"
+          id="second-Number"
+          name="second-Number"
+          placeholder="Enter 2nd #"
+          onkeyup="saveSecondNumber(this.value)"
+        /><br />
+
+        <!-- this "onclick" calls the "equal" function in the main.js file -->
+        <button type="button" id="equals" onclick="equals()">=</button>
+        <div id="result"></div>
+        <button type="reset" id="reset">Reset</button>
+      </form>
+    </div>
   </body>
 </html>
