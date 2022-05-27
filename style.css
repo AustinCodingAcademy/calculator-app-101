@@ -141,12 +141,14 @@ form {
     grid-column: 4/7;
     font-size: 38px;
     text-align: center;
+    width: 300px;
   }
 
   #second-Number {
     grid-column: 4/7;
     font-size: 38px;
     text-align: center;
+    width: 300px;
   }
 
   button {
@@ -168,6 +170,7 @@ form {
   }
   #result {
     grid-column: 3/7;
+    width: 350px;
   }
 }
 @media (min-width: 2560px) and (min-height: 1600px) {
