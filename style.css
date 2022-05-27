@@ -6,19 +6,21 @@
 body {
   width: 100vw;
   min-height: 100vh;
+
   font-family: "Blaka Hollow", cursive;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
   background-color: rgb(192, 142, 142);
-  border: 5px solid black;
 }
 
 .page_container {
-  border: 5px solid pink;
-  width: 95vw;
-  min-height: 95vh;
+  /* border: 5px solid pink; */
+  border: 8px solid rgb(100, 89, 89);
+
+  width: 100vw;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -28,42 +30,31 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  border: 5px solid green;
 
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
-/* display: grid; 
-  width: 90vw;
 
-  grid-template-columns: repeat(6, 1fr); */
-
-/* grid-template-areas:
-    ". . . . . . . ."
-    ". first first . num1 num1 num1 ."
-    ". . . . . . . ."
-    ". . + - x / % ."
-    ". . . . . . . ."
-    ". second second . num2 num2 num2 ."
-    ". . . . . . . ."
-    ". . equals equals . results results results"
-    ". . . . . . . ."
-    ". . . reset reset reset . .";
-} */
 h1 {
   font-size: 46px;
   padding-top: 20%;
+  color: rgb(94, 44, 44);
 }
 label {
   font-size: 32px;
+  color: rgba(39, 108, 133, 0.66);
 }
 input {
   height: 50%;
   width: 120%;
 }
+placeholder {
+  color: rgba(39, 108, 133, 0.66);
+}
 button {
-  height: 40%;
+  height: 50%;
   width: 95%;
   font-size: 20px;
+  color: rgb(94, 44, 44);
 }
 form {
   padding-bottom: 20%;
@@ -75,9 +66,9 @@ form {
 }
 #result {
   display: inline-block;
-  border-bottom: solid 5px black;
+  border-bottom: solid 5px rgb(87, 77, 77);
   height: 60%;
-  width: 100%;
+  width: 120%;
 }
 #first-number-label {
   grid-column: 1/5;
@@ -116,7 +107,7 @@ form {
   grid-column: 6/7;
   grid-row: 2/3;
 }
-#equals {
+#equal {
   grid-column: 2/3;
   grid-row: 4/5;
 }
