@@ -47,9 +47,7 @@ input {
   height: 50%;
   width: 120%;
 }
-placeholder {
-  color: rgba(39, 108, 133, 0.66);
-}
+
 button {
   height: 50%;
   width: 95%;
@@ -71,6 +69,7 @@ form {
   width: 120%;
 }
 #first-number-label {
+  color: rgb(12, 90, 119);
   grid-column: 1/5;
   grid-row: 1/2;
 }
@@ -80,6 +79,7 @@ form {
   grid-row: 1/2;
 }
 #second-number-label {
+  color: rgb(12, 90, 119);
   grid-column: 1/5;
   grid-row: 3/4;
 }
@@ -118,4 +118,65 @@ form {
 #reset {
   grid-column: 3/8;
   grid-row: 5/6;
+}
+@media (min-width: 2560px) and (min-height: 1600px) {
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    /* width: 700px;
+    height: 1200px; */
+    /* background-color: aquamarine; */
+  }
+
+  h1 {
+    font-size: 106px;
+    padding-top: 20%;
+    color: rgb(94, 44, 44);
+  }
+  label {
+    font-size: 86px;
+    color: rgba(39, 108, 133, 0.66);
+  }
+  input {
+    height: 80px;
+    width: 550px;
+  }
+
+  button {
+    height: 50%;
+    width: 95%;
+    font-size: 40px;
+    color: rgb(94, 44, 44);
+  }
+  form {
+    padding-bottom: 20%;
+  }
+  #first-Number,
+  #second-Number {
+    font-size: 40px;
+    text-align: center;
+  }
+  #reset {
+    height: 80px;
+    width: 550px;
+    font-size: 44px;
+  }
+  #result {
+    display: inline-block;
+    border-bottom: solid 5px rgb(87, 77, 77);
+    height: 80px;
+    width: 700px;
+  }
+  #equal {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+  #reset {
+    grid-column: 2/7;
+    grid-row: 5/6;
+  }
 }
