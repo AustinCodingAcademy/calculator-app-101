@@ -119,6 +119,56 @@ form {
   grid-column: 3/8;
   grid-row: 5/6;
 }
+@media (min-width: 992px) {
+  h1 {
+    font-size: 106px;
+    padding-top: 40px;
+  }
+  label {
+    font-size: 60px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  input {
+    height: 80px;
+  }
+  #first-number-label {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+  #first-Number {
+    grid-column: 4/7;
+    font-size: 38px;
+    text-align: center;
+  }
+
+  #second-Number {
+    grid-column: 4/7;
+    font-size: 38px;
+    text-align: center;
+  }
+
+  button {
+    height: 75px;
+    width: 75px;
+    font-size: 40px;
+    justify-self: center;
+  }
+  form {
+    padding-bottom: 40px;
+  }
+  #equal {
+    grid-column: 2/3;
+  }
+  #reset {
+    height: 80px;
+    font-size: 44px;
+    grid-column: 2/7;
+  }
+  #result {
+    grid-column: 3/7;
+  }
+}
 @media (min-width: 2560px) and (min-height: 1600px) {
   .calculator {
     display: grid;
