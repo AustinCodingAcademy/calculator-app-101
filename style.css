@@ -46,6 +46,7 @@ label {
 input {
   height: 50%;
   width: 120%;
+  text-align: center;
 }
 
 button {
