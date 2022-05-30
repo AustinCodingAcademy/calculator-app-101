@@ -2,4 +2,17 @@ body {
   margin: 20% auto;
   width: 50%;
   height: 75%;
+  background-color: darkseagreen;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 4;
+}
+form > * {
+  gap: 1%;
+  margin: 3%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
 }
