@@ -34,17 +34,20 @@ const multiply = (numA, numB) => {
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
   return multiply
+  console.log (multiply)
 }
 
 const divide = (numA, numB) => {
   const division = numA / numB
   return division
+  console.log (divide)
 }
 // / to get a quotient,
 
 const modulus = (numA, numB) => {
   const mod = numA % numB
   return mod
+  console.log (mod)
 }
 // and % to get a remainder.
 
