@@ -17,11 +17,21 @@
     <input  id="second-Number" name="second-Number" placeholder="type the second number" value="" onkeyup="saveSecondNumber(this.value)">
     <div>
       <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
-      <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">Add</button>
-      <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">Subtract</button>
-      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">Multiply</button>
-      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">Divide</button>
-      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">Modulus</button>
+      <button id="button-1" onclick="handleClick(this)" value="1">1</button>
+      <button id="button-2" onclick="handleClick(this)" value="2">2</button>
+      <button id="button-3" onclick="handleClick(this)" value="3">3</button>
+      <button id="button-4" onclick="handleClick(this)" value="4">4</button>
+      <button id="button-5" onclick="handleClick(this)" value="5">5</button>
+      <button id="button-6" onclick="handleClick(this)" value="6">6</button>
+      <button id="button-7" onclick="handleClick(this)" value="7">7</button>
+      <button id="button-8" onclick="handleClick(this)" value="8">8</button>
+      <button id="button-9" onclick="handleClick(this)" value="9">9</button>
+      <button id="button-0" onclick="handleClick(this)" value="0">0</button>
+      <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">+</button>
+      <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">-</button>
+      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">×</button>
+      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">÷</button>
+      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">%</button>
     
     </div>
     <br>

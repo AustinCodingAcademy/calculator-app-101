@@ -3,6 +3,7 @@
 let firstNum = null
 let secondNum = null
 let operation = null 
+
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
 const saveFirstNumber = (num) => {
   firstNum = parseInt(num)  

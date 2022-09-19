@@ -4,11 +4,11 @@ html {
   box-sizing: border-box;
 }
 
-/* *, *::before, *::after {
-  margin: 0;
+*, *::before, *::after {
+  margin: 10px;
   padding: 0;
-  box-sizing: inherit;
-} */
+  box-sizing:inherit;
+}
 
 body {
 
@@ -25,6 +25,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
+  box-shadow: 0px 0px 43px 17px rgba(153,153,153,3);  
   }
 
 label {
@@ -66,12 +67,11 @@ input {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; `
  }
  button {
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr 1f; */
   padding: 15px;
  }
   button:hover {
     background-color: #eaeaea;
+    transition: 0.5s ease-in-out;
   }
 
   #clear {
@@ -79,7 +79,6 @@ input {
     border-color: #710408;
     display: grid;
   grid-template-columns: 70px;
-  
   margin: auto;
   margin-bottom: 10px;
   }
@@ -92,10 +91,9 @@ input {
     background-color: #e58d90;
     border-color: #710408;
     display: grid;  
- /* grid-template-columns: 70px; */
-  padding: 18px;
-  margin: auto;
-  /* margin-left: 20px; */
+ grid-template-columns: 70px;
+margin: auto;
+  
   
   
 
