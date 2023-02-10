@@ -1,12 +1,12 @@
-// These variable hold the numbers we want to do operations on and the name of the operation we want to perform.
+// These variables hold the numbers we want to do operations on and the name of the operation we want to perform.
 // They are expected to change so we use the "let" keyword.
 let firstNum = null
 let secondNum = null
 let operation = null
 
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
-const saveFirstNumber = (num) => {
-  firstNum = parseInt(num)  
+const saveFirstNumber = (firstNum) => {
+  firstNum = parseInt(firstNum) 
 }
 
 // this function takes in the number you type in the 2nd input field and saves it to the "secondNum" variable
@@ -45,7 +45,7 @@ const modulus = null
 const changeOperation = (chosenOperation) => {
   operation = chosenOperation
   // Use your Chrome Inspector Tool > Console Tab to see the "operation" that's logged
-  console.log(operation)
+  console.log((firstNum, secondNum)operation)
 }
 
 // In order to show the user their results we have to access the DOM and stick in the value
@@ -53,12 +53,14 @@ const putResultInElement = (operationResults) => {
   // access the DOM by writing "document" then use the method "getElementById" and pass it the id, "result".
   document.getElementById("result").innerHTML = "Results: " + operationResults
 
+
   // Remember, each element has built in properties like "innerHTML" which we can change to anything we like. 
   // Here we give it a string: "Results: " and add the value of the operation to it.
 }
 
 // The function uses the value of "operation" variable to determine which operation function it should use on the number: add, subtract, multiply, divide, or modulus
-const equals = () => {
+const setEquals = () => {
+  console.log('Result:', )
   switch (operation) {
     case "addition":  putResultInElement(add(firstNum, secondNum)) 
     break;
