@@ -1,5 +1,21 @@
 body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+  margin-top: 20pt;
+  color: white;
+}
+
+h1 {
+  color: black;
+  margin-left: 44%;
+}
+
+.form-container {
+  background-color: black;
+  margin: auto;
+  height:500px;
+  width: 500px;
+}
+
+.calculator {
+  display: grid;
+  row-gap: 25pt;
 }
