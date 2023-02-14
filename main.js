@@ -6,7 +6,8 @@ let operation = null
 
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
 const saveFirstNumber = (num) => {
-  firstNum = parseInt(num)  
+  console.log('num:', num)
+  firstNum = parseInt(num) 
 }
 
 // this function takes in the number you type in the 2nd input field and saves it to the "secondNum" variable
@@ -59,6 +60,12 @@ const putResultInElement = (operationResults) => {
 
 // The function uses the value of "operation" variable to determine which operation function it should use on the number: add, subtract, multiply, divide, or modulus
 const equals = () => {
+  if (!firstNum) {
+    firstNum = parseInt(document.getElementById('first-Number').value)
+  }
+  if (!secondNum) {
+    secondNum = parseInt(document.getElementById('second-Number').value)
+  }
   switch (operation) {
     case "addition":  putResultInElement(add(firstNum, secondNum)) 
     break;
@@ -70,7 +77,7 @@ const equals = () => {
     break;
     case "modulus": console.log(modulus(firstNum, secondNum)) 
     break;
-    default: "Choose an operation"
+    default: alert("Choose an operation")
   }
 }
 
