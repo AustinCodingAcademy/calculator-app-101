@@ -4,6 +4,7 @@ let firstNum = null
 let secondNum = null
 let operation = null
 
+
 // this function takes in the number you type in the input field and saves it to the "firstNum" variable
 const saveFirstNumber = (num) => {
   firstNum = parseInt(num)  
@@ -32,14 +33,21 @@ const subtract = (numA, numB) => {
 const multiply = (numA, numB) => {
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  console.log(numA, numB)
+  const multiply = (numA * numB)
+  return multiply
 }
 
-const divide = null
+const divide = (numA, numB) => {
 // / to get a quotient,
+const divide = (numA / numB)
+return divide
+}
 
-const modulus = null
+const modulus = (numA, numB) => {
 // and % to get a remainder.
+const modulus = (numA % numB)
+return modulus
+}
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 const changeOperation = (chosenOperation) => {
@@ -59,18 +67,30 @@ const putResultInElement = (operationResults) => {
 
 // The function uses the value of "operation" variable to determine which operation function it should use on the number: add, subtract, multiply, divide, or modulus
 const equals = () => {
+  if (!firstNum) {
+    firstNum = parseInt(document.getElementById('first-Number').value)
+  }
+  if (!secondNum) {
+    secondNum = parseInt(document.getElementById('second-Number').value)
+  }
+  console.log(firstNum, secondNum);
   switch (operation) {
     case "addition":  putResultInElement(add(firstNum, secondNum)) 
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
     break;
-    case "division": console.log(divide(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
     break;
-    case "modulus": console.log(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
 }
 
+const clearresult = () => {
+  document.getElementById('result').innerHTML = null
+  document.getElementById('first-Number').value = null
+  document.getElementById('second-Number').value = null
+}
