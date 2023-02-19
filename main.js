@@ -79,3 +79,10 @@ const equals = () => {
   }
 }
 
+const clearResults = () => {
+  console.log("help")
+  document.getElementById('result').innerHTML = null
+  document.getElementById('first-Number').value = null
+  document.getElementById('second-Number').value = null
+}
+
