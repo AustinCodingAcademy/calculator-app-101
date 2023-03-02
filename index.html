@@ -3,30 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Rowdies:wght@300&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
-  <title>Document</title>
+  <title>Calculator</title>
 </head>
 <body>
-  <form class="calculator">
-    <label for="first-number">First Number:</label>
-    <!-- the "onkeyup" event listener passes its input's "value" to the "saveFirstNumber" function in the main.js file -->
-    <input type="number" id="first-Number" name="first-Number" placeholder="type the first number" value="" onkeyup="saveFirstNumber(this.value)">
-    <label for="second-number">Second Number:</label>
-    <input type="number" id="second-Number" name="second-Number" placeholder="type the second number" onkeyup="saveSecondNumber(this.value)">
-    <div>
-      <!-- the "onclick" event listener passes its element's "id" to the "changeOperation" function in the main.js file -->
-      <button type="button" name="add" id="addition" onclick="changeOperation(this.id)">Add</button>
-      <button type="button" name="subtract" id="subtraction" onclick="changeOperation(this.id)">Subtract</button>
-      <button type="button" name="multiply" id="multiplication" onclick="changeOperation(this.id)">Multiply</button>
-      <button type="button" name="divide" id="division" onclick="changeOperation(this.id)">Divide</button>
-      <button type="button" name="modulus" id="modulus" onclick="changeOperation(this.id)">Modulus</button>
+  <div id="containers" class="container">
+  <input type="text" name="input" id="input">
+  <div class="calculator-container">
+    <div class="number-container">
+    <div class="first-row">
+    <button id="button" class="button">1</button>
+    <button id="button" class="button">2</button>
+    <button id="button" class="button">3</button>
     </div>
-    <br>
-    <!-- this "onclick" calls the "equal" function in the main.js file -->
-    <button id="equals" type="button" onclick="setEquals()">Equals</button>
-    <button type="reset">Clear</button>
-  </form>
-  <div id="result"></div>
+    <div class="second-row">
+    <button id="button" class="button">4</button>
+    <button id="button" class="button">5</button>
+    <button id="button" class="button">6</button>
+    </div>
+    <div class="third-row">
+    <button id="button" class="button">7</button>
+    <button id="button" class="button">8</button>
+    <button id="button" class="button">9</button>
+    </div>
+    <div class="fourth-row">
+    <button id="clear" class="button" id="equals">C</button>
+    <button id="button" class="button">0</button>
+    <button id="button" class="button">%</button>
+    </div>
+    </div>
+    <div class="function-container">
+    <button id="operator" class="button">+</button>
+    <button id="operator" class="button">-</button>
+    <button id="operator" class="button">*</button>
+    <button id="operator" class="button">/</button>
+    </div>
+    <div class="equals-button">
+    <button id="equals" class="equalsButton">=</button>
+    </div>
+  </div>
+  <div class="result-container">
+    <h1 id="result">RESULT</h1>
+    <div class="result"></div>
+  </div>
+  </div>
+  </body>
 </body>
 </html>
+<!-"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)"
+onclick="userClick(this)" -->
