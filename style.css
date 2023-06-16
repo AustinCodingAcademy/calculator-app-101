@@ -1,5 +1,46 @@
 body {
-  margin: 20% auto;
   width: 50%;
   height: 75%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  margin: auto auto;
+  grid-gap: 1px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "greeting greeting"
+    "one two"
+    "three four"
+    "five five";
+  grid-row-gap: 50px;
+  text-align: center;
+}
+
+.greeting {
+  grid-area: greeting;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
 }
