@@ -94,13 +94,6 @@ const equals = () => {
   }
 };
 
-// const clear = () => {
-//   console.log(`this clear function is on`);
-//   console.log(document.getElementById("result").innerHTML);
-//   document.getElementById("result").value = null;
-// };
-
-// const buttonReset = document.getElementById('plz');
 
 document.getElementById("plz").addEventListener("click", function (e) {
   e.preventDefault();
@@ -110,4 +103,3 @@ document.getElementById("plz").addEventListener("click", function (e) {
   console.log(`heck yeah, no page reload.`);
 });
 
-console.log("asdfasdf");
