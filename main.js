@@ -79,3 +79,8 @@ const equals = () => {
   }
 }
 
+// A function that will handle the clear operation.
+const clearResult = () => {
+  console.log('test')
+  document.getElementById("result").innerHTML = "";
+}
