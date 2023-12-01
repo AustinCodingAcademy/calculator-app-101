@@ -1,13 +1,20 @@
 body {
-  margin: 20% auto;
+  margin: 10% auto;
   width: 50%;
   height: 75%;
+  background-color: #FFF;
+  color: #207487;
+}
+
+.title {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .calculator {
-  background-color: lavender;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border: 5px solid purple;
+  background-color: #207487;
   border-radius: 10px;
   padding: 50px;
   display: grid;
@@ -20,6 +27,16 @@ body {
     "addition subtraction division multiplication"
     "modulo modulo equals equals"
     "clear clear clear clear"; 
+}
+
+.calculator, .calculator button {
+  font-family: 'Hubballi', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.calculator button {
+  color: #BF5151;
 }
 
 .firstnum {
@@ -65,4 +82,9 @@ body {
   border-radius: 10px;
   background-color: white;
   height: 40px;
+}
+
+.title {
+  font-family: 'Hubballi', sans-serif;
+  font-size: 60px;
 }
